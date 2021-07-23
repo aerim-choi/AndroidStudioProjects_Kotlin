@@ -33,16 +33,17 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#FF5722"
             android:visibility="visible"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         </FrameLayout>
 
         <TextView
-            android:id="@+id/textView6"
-            android:layout_width="307dp"
-            android:layout_height="wrap_content"
-            android:text=" 세원이담당계단버튼구성화이팅"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:text="outfood1"
             android:textSize="50sp"
             app:layout_anchor="@+id/container"
             app:layout_anchorGravity="center" />
