@@ -7,17 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_main.*
+import org.techtown.sungshin3f.R
 
-class Fragment3 : Fragment() {
+class Fragment5 : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_3, container, false)
+        return inflater.inflate(R.layout.fragment_5, container, false)
     }
-    override fun onBackPressed() {
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
-            drawerLayout.closeDrawer(GravityCompat.START)
-        }else{
 
-        }
-    }
+
 }

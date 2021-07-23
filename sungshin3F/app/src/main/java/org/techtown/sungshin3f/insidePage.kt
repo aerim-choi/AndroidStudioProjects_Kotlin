@@ -1,21 +1,21 @@
-package org.techtown.drawer
+package org.techtown.sungshin3f
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_outside_page.*
+import org.techtown.drawer.*
 
-class MainActivity : AppCompatActivity() {
+class insidePage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_inside_page)
         //토글 만드는방법(개발자가 이렇게 쓰라고 한거임 )
         setSupportActionBar(toolbar)
 
-        val toggle = ActionBarDrawerToggle(this, drawerLayout,toolbar, R.string.open, R.string.close)
+        val toggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
@@ -39,20 +39,20 @@ class MainActivity : AppCompatActivity() {
     }
     fun onFragmentSelected(index:Int){
         //Fragment1()로 초기화 해줌
-        var fragment: Fragment=Fragment1()
+        var fragment: Fragment = Fragment1()
 
         when(index){
             0 -> {
-                toolbar.title="첫번째 화면"
-                fragment=Fragment1()
+                toolbar.title="내부:첫번째 화면"
+                fragment= Fragment4()
             }
             1 ->{
-                toolbar.title="두번째 화면"
-                fragment=Fragment2()
+                toolbar.title="내부:두번째 화면"
+                fragment= Fragment5()
             }
             2 ->{
-                toolbar.title="세번째 화면"
-                fragment=Fragment3()
+                toolbar.title="내부:세번째 화면"
+                fragment= Fragment6()
             }
         }
         with(supportFragmentManager.beginTransaction()){
@@ -69,5 +69,5 @@ class MainActivity : AppCompatActivity() {
             super.onBackPressed()
         }
     }
-}
 
+}
