@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sungshin3F">
-        <activity android:name=".InsidePage"></activity>
-        <activity android:name=".OutsidePage" />
+        <activity android:name=".InsideCate"></activity>
+        <activity android:name=".OutsideCate" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

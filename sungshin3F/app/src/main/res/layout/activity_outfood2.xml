@@ -14,7 +14,6 @@
         android:layout_height="match_parent" >
 
         <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme.AppBarOverlay"
@@ -34,17 +33,17 @@
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FFEB3B"
+            android:background="#FFFFFF"
             android:visibility="visible"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         </FrameLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="71dp"
-            android:text="outfashion1"
+            android:text="outfood1"
             android:textSize="50sp"
             app:layout_anchor="@+id/container"
             app:layout_anchorGravity="center" />
@@ -57,7 +56,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        android:visibility="visible"
+        android:visibility="gone"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu" />
 

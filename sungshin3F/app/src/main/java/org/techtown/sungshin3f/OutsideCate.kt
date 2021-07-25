@@ -5,15 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
-import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_outside_page.*
+import kotlinx.android.synthetic.main.activity_outsidecate.*
 import org.techtown.drawer.*
 
-class OutsidePage : AppCompatActivity() {
+class OutsideCate : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_outside_page)
+        setContentView(R.layout.activity_outsidecate)
 
         //토글 만드는방법(개발자가 이렇게 쓰라고 한거임 )
         setSupportActionBar(toolbar)
@@ -46,9 +45,10 @@ class OutsidePage : AppCompatActivity() {
 
 
     override fun onBackPressed() {
+        //메뉴바열렸을때 뒤로가기 누르면 메뉴바 닫힌다.
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START)
-        }else{
+        }else{//메뉴바 닫혔을때 뒤로가기누르면 화면이 뒤로간다.
             super.onBackPressed()
         }
     }

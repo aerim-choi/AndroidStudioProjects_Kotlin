@@ -11,17 +11,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
-
-
         //외부버튼
         Image1.setOnClickListener {
-            val outsideIntent= Intent(this,OutsidePage::class.java)
+            val outsideIntent= Intent(this,OutsideCate::class.java)
             startActivity(outsideIntent)
         }
         //외부버튼
         Image2.setOnClickListener{
-            val insideIntent= Intent(this,InsidePage::class.java)
+            val insideIntent= Intent(this,InsideCate::class.java)
             startActivity(insideIntent)
         }
 

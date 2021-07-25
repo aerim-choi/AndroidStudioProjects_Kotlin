@@ -1,17 +1,19 @@
 package org.techtown.sungshin3f
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
-import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.activity_outside_page.*
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_outsidecate.*
 import org.techtown.drawer.*
 
-class InsidePage : AppCompatActivity() {
+class OutFood2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inside_page)
+        setContentView(R.layout.activity_outfood2)
+
         //토글 만드는방법(개발자가 이렇게 쓰라고 한거임 )
         setSupportActionBar(toolbar)
 
@@ -22,13 +24,16 @@ class InsidePage : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.item1 -> {
-                    onFragmentSelected(0)
+                    val outsideIntent= Intent(this,OutFun1::class.java)
+                    startActivity(outsideIntent)
                 }
                 R.id.item2 -> {
-                    onFragmentSelected(1)
+                    val outsideIntent= Intent(this,OutFood2::class.java)
+                    startActivity(outsideIntent)
                 }
                 R.id.item3 -> {
-                    onFragmentSelected(2)
+                    val outsideIntent= Intent(this,OutFashion1::class.java)
+                    startActivity(outsideIntent)
                 }
             }
             //바로가기 메뉴 닫기
@@ -37,35 +42,13 @@ class InsidePage : AppCompatActivity() {
             return@setNavigationItemSelectedListener true
         }
     }
-    fun onFragmentSelected(index:Int){
-        //Fragment1()로 초기화 해줌
-        var fragment: Fragment = Fragment1()
 
-        when(index){
-            0 -> {
-                toolbar.title="내부:첫번째 화면"
-                fragment= Fragment4()
-            }
-            1 ->{
-                toolbar.title="내부:두번째 화면"
-                fragment= Fragment5()
-            }
-            2 ->{
-                toolbar.title="내부:세번째 화면"
-                fragment= Fragment6()
-            }
-        }
-        with(supportFragmentManager.beginTransaction()){
-            replace(R.id.container,fragment)
-        }.commit()
-
-
-    }
-
+//
     override fun onBackPressed() {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START)
         }else{
+
             super.onBackPressed()
         }
     }

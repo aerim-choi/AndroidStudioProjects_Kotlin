@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
-import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_outside_page.*
+import kotlinx.android.synthetic.main.activity_outfood1.*
 import org.techtown.drawer.*
 
 class OutFood1 : AppCompatActivity() {
@@ -44,30 +43,7 @@ class OutFood1 : AppCompatActivity() {
         }
     }
 
-//    fun onFragmentSelected(index:Int){
-//        //Fragment1()로 초기화 해줌
-//        var fragment: Fragment = Fragment1()
-//
-//        when(index){
-//            0 -> {
-//                toolbar.title="내부:첫번째 화면"
-//                fragment= Fragment4()
-//            }
-//            1 ->{
-//                toolbar.title="내부:두번째 화면"
-//                fragment= Fragment5()
-//            }
-//            2 ->{
-//                toolbar.title="내부:세번째 화면"
-//                fragment= Fragment6()
-//            }
-//        }
-//        with(supportFragmentManager.beginTransaction()){
-//            replace(R.id.container,fragment)
-//        }.commit()
-//
-//
-//    }
+
     override fun onBackPressed() {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START)
