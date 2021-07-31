@@ -7,7 +7,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_outfood1.*
-import org.techtown.drawer.*
+
 
 class OutFood1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,14 +24,17 @@ class OutFood1 : AppCompatActivity() {
         navigationView.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.item1 -> {
+                    finish()
                     val outsideIntent= Intent(this,OutFun1::class.java)
                     startActivity(outsideIntent)
                 }
                 R.id.item2 -> {
+                    finish()
                     val outsideIntent= Intent(this,OutFood1::class.java)
                     startActivity(outsideIntent)
                 }
                 R.id.item3 -> {
+                    finish()
                     val outsideIntent= Intent(this,OutFashion1::class.java)
                     startActivity(outsideIntent)
                 }
@@ -48,7 +51,7 @@ class OutFood1 : AppCompatActivity() {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START)
         }else{
-
+            finish()
             super.onBackPressed()
         }
     }

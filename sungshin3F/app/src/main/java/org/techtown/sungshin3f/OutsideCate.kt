@@ -7,7 +7,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_outsidecate.*
-import org.techtown.drawer.*
+
 
 class OutsideCate : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,6 +49,7 @@ class OutsideCate : AppCompatActivity() {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
             drawerLayout.closeDrawer(GravityCompat.START)
         }else{//메뉴바 닫혔을때 뒤로가기누르면 화면이 뒤로간다.
+            finish()
             super.onBackPressed()
         }
     }

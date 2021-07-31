@@ -7,7 +7,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_outsidecate.*
-import org.techtown.drawer.*
+
 
 class OutFood2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

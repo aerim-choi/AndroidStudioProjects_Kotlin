@@ -7,8 +7,6 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.activity_insidecate.*
 
-import org.techtown.drawer.*
-
 class InsideCate : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
