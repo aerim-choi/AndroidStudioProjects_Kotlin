@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
+        android:fontFamily="sans-serif"
         android:text="오늘 하루, 어디서 보내실 건가요?"
         android:textSize="20dp"
         android:textStyle="bold"

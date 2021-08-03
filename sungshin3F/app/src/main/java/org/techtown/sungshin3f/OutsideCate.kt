@@ -14,6 +14,22 @@ class OutsideCate : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_outsidecate)
 
+
+        InsideCate1Fbtn.setOnClickListener{
+            val outFun1Intent= Intent(this,OutFun1::class.java)
+            startActivity(outFun1Intent)
+        }
+        InsideCate2Fbtn.setOnClickListener {
+            //일단민영이가 한걸로 연결함
+            val outFood1Intent= Intent(this,OutFood2::class.java)
+            startActivity(outFood1Intent)
+        }
+        InsideCate3Fbtn.setOnClickListener{
+
+        }
+
+
+
         //토글 만드는방법(개발자가 이렇게 쓰라고 한거임 )
         setSupportActionBar(toolbar)
 
@@ -28,7 +44,7 @@ class OutsideCate : AppCompatActivity() {
                     startActivity(outsideIntent)
                 }
                 R.id.item2 -> {
-                    val outsideIntent= Intent(this,OutFood1::class.java)
+                    val outsideIntent= Intent(this,OutFood2::class.java)
                     startActivity(outsideIntent)
                 }
                 R.id.item3 -> {

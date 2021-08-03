@@ -10,6 +10,7 @@
         android:id="@+id/introtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumfont"
         android:text="SungShin3F"
         android:textColor="#000000"
         android:textSize="34sp"

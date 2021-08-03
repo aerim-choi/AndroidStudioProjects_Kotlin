@@ -1,5 +1,6 @@
 package org.techtown.sungshin3f
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -11,6 +12,19 @@ class InsideCate : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_insidecate)
+
+        InsideCate1Fbtn.setOnClickListener{
+            //아무것도 안만들어서 인텐트 할게 없음
+        }
+        InsideCate2Fbtn.setOnClickListener {
+
+        }
+        InsideCate3Fbtn.setOnClickListener{
+
+        }
+
+
+
         //토글 만드는방법(개발자가 이렇게 쓰라고 한거임 )
         setSupportActionBar(toolbar)
 

@@ -30,12 +30,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(guideIntent)
 
             finish()
-        //입장하기 버튼을 눌렀다면
-//            entrancebtn.setOnClickListener ({v->
-//                finish()
-//                val mainIntent= Intent(this,MainActivity::class.java)
-//                startActivity(mainIntent)
-//            })
+
 
         }else{
             //앱 최초 실행이 아닌 경우

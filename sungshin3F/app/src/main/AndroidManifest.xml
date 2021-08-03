@@ -22,7 +22,7 @@
         <activity android:name=".OutFun1" />
         <activity android:name=".OutFood1" />
         <activity android:name=".OutFashion1" />
-
+        <activity android:name=".OutFood2" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
