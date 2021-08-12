@@ -13,7 +13,7 @@ class Question5Fragment : Fragment() {
     private var mBinding: FragmentQuestion5Binding?=null
     private val binding get()=mBinding!!
     companion object{
-        var question5:Boolean?=true
+        var question5:Boolean?=null
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,11 +25,13 @@ class Question5Fragment : Fragment() {
     ): View? {
         mBinding= FragmentQuestion5Binding.inflate(inflater,container,false)
         binding.question5yesbtn.setOnClickListener {
+            NewRecMainActivity.checkbool[4]=true
             binding.question5nobtn.setBackgroundColor(Color.WHITE)
             question5=true
             binding.question5yesbtn.setBackgroundColor(Color.GRAY)
         }
         binding.question5nobtn.setOnClickListener {
+            NewRecMainActivity.checkbool[4]=true
             binding.question5yesbtn.setBackgroundColor(Color.WHITE)
             question5=false
             binding.question5nobtn.setBackgroundColor(Color.GRAY)

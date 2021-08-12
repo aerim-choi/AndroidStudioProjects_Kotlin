@@ -10,6 +10,9 @@ import org.techtown.jsoupex2.databinding.ActivityNewwebtoonBinding
 class NewRecMainActivity : AppCompatActivity() {
     private var mBinding: ActivityNewRecMainBinding?=null
     private val binding get()=mBinding!!
+    companion object{
+        var checkbool=Array<Boolean>(5,{index->false})
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = ActivityNewRecMainBinding.inflate(layoutInflater)
@@ -20,6 +23,9 @@ class NewRecMainActivity : AppCompatActivity() {
             startActivity(newIntent)
         }
         binding.recbtn.setOnClickListener{
+            for(i in 0..4){
+                checkbool[i]=false
+            }
             var recIntent= Intent(this,Recwebtoon::class.java)
             startActivity(recIntent)
         }

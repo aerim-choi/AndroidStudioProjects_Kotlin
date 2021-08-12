@@ -14,6 +14,9 @@ import org.techtown.jsoupex2.databinding.ActivityRecwebtoonBinding
 class Recwebtoon : AppCompatActivity() {
     private var mBinding: ActivityRecwebtoonBinding?=null
     private val binding get()=mBinding!!
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding =  ActivityRecwebtoonBinding.inflate(layoutInflater)
@@ -30,11 +33,12 @@ class Recwebtoon : AppCompatActivity() {
         binding.pager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback(){
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
-                showToast("페이지 선택: ${position}")
+                //showToast("페이지 선택: ${position}")
                 binding.indicator.animatePageSelected(position)
             }
         })
     }
+
     fun showToast(message:String){
         Toast.makeText(applicationContext,message, Toast.LENGTH_LONG).show()
     }

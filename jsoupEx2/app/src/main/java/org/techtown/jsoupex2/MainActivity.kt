@@ -1,21 +1,13 @@
 package org.techtown.jsoupex2
 
 import android.content.Intent
-import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.bumptech.glide.Glide
-import com.squareup.picasso.Picasso
-import org.jsoup.Jsoup
 import org.techtown.jsoupex2.databinding.ActivityMainBinding
-import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
     private var mBinding:ActivityMainBinding?=null
     private val binding get()=mBinding!!
-    val GenWebtoonImgs=ArrayList<String>()
-    val GenWebtoonTitles=ArrayList<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

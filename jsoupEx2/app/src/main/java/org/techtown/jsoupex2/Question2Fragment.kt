@@ -14,7 +14,7 @@ class Question2Fragment : Fragment() {
     private var mBinding: FragmentQuestion2Binding?=null
     private val binding get()=mBinding!!
     companion object{
-        var question2:Boolean?=true
+        var question2:Boolean?=null
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,15 +28,17 @@ class Question2Fragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         mBinding= FragmentQuestion2Binding.inflate(inflater,container,false)
-        binding.question2hotbtn.setOnClickListener{
-            binding.question2coolbtn.setBackgroundColor(Color.WHITE)
+        binding.question2yesbtn.setOnClickListener{
+            NewRecMainActivity.checkbool[1]=true
+            binding.question2nobtn.setBackgroundColor(Color.WHITE)
             question2=true
-            binding.question2hotbtn.setBackgroundColor(Color.GRAY)
+            binding.question2yesbtn.setBackgroundColor(Color.GRAY)
         }
-        binding.question2coolbtn.setOnClickListener {
-            binding.question2hotbtn.setBackgroundColor(Color.WHITE)
+        binding.question2nobtn.setOnClickListener {
+            NewRecMainActivity.checkbool[1]=true
+            binding.question2yesbtn.setBackgroundColor(Color.WHITE)
             question2=false
-            binding.question2coolbtn.setBackgroundColor(Color.GRAY)
+            binding.question2nobtn.setBackgroundColor(Color.GRAY)
         }
         // Inflate the layout for this fragment
         return binding.root
