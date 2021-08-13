@@ -31,7 +31,6 @@ class PersonAdapter :RecyclerView.Adapter<PersonAdapter.ViewHolder>(){
     //스크롤하면서 안보이는 부분을 밑으로 내려서 각각의 아이템을 재사용할수 있게 해주는게뷰홀더
     //내부클래스(클래스 안에 클래스)
     inner class ViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
-
         init{
             itemView.setOnClickListener{
                 listener?.onItemClick(this,itemView,adapterPosition)
