@@ -43,7 +43,6 @@ class QuestionresFragment : Fragment() {
                                 showToast("${i + 1}번째 질문에 대답해 주세요.")
                                 showToast(checkres.toString())
                             }
-
                         }
                     }
                 }

@@ -21,10 +21,9 @@
         <activity android:name=".Thrillerwebtoon" />
         <activity android:name=".Actionwebtoon" />
         <activity android:name=".Romancewebtoon" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Infun1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

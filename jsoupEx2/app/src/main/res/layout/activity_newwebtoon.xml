@@ -22,7 +22,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/DetailWebtoonImg"
+                    android:id="@+id/NewWebtoonImg1"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:background="#000000" />
@@ -44,7 +44,7 @@
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/DetailWebtoonWriter"
+                        android:id="@+id/NewWebtoonWriter1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -55,7 +55,7 @@
                         android:textSize="20sp" />
 
                     <TextView
-                        android:id="@+id/DetailWebtoonCon"
+                        android:id="@+id/NewWebtoonCon1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
