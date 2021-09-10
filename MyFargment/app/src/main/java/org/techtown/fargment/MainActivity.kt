@@ -13,26 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        showLoginButton.setOnClickListener {
-            //Transaction은 함수가 한꺼번에 작동할수있도록 하는거
-           //supportFragmentManager.beginTransaction().replace(R.id.container,LoginFragment()).commit()
-           /* with(supportFragmentManager.beginTransaction()){
-                replace(R.id.container,LoginFragment())
-            }.commit()
-            */
-//            with(supportFragmentManager.beginTransaction()){
-//                replace(R.id.container,loginFragment)
-//            }.commit()
+        showLoginButton.setOnClickListener{
             onFragmentChanged(0)
         }
         showMenuButton.setOnClickListener {
-            //supportFragmentManager.beginTransaction().replace(R.id.container,MenuFragment()).commit()
-//            with(supportFragmentManager.beginTransaction()){
-//                replace(R.id.container,menuFragment)
-//            }.commit()
             onFragmentChanged(1)
         }
     }
+
     fun onFragmentChanged(index:Int){
         when(index){
             0->{
