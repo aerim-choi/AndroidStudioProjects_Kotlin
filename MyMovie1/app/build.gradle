@@ -45,4 +45,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
     //indicator 외부라이브러리 사용
     implementation 'me.relex:circleindicator:2.1.4'
+    //movie_comment_item
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 }
