@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //토글 만드는 방법(개발자가 이렇게 쓰라고 한거임 )
+        //토글 만드는방법(개발자가 이렇게 쓰라고 한거임 )
         setSupportActionBar(toolbar)
 
         val toggle = ActionBarDrawerToggle(this, drawerLayout,toolbar, R.string.open, R.string.close)
