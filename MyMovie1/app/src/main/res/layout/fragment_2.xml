@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -154,7 +155,9 @@
                                 android:layout_width="26dp"
                                 android:layout_height="26dp"
                                 android:layout_alignParentLeft="true"
-                                android:background="@drawable/thumbs_up_selector" />
+                                android:background="@drawable/thumbs_up_selector"
+                                app:backgroundTint="#00000000"
+                                app:backgroundTintMode="add" />
 
                             <TextView
                                 android:id="@+id/thumbsUpCountView"
@@ -174,7 +177,9 @@
                                 android:layout_height="26dp"
                                 android:layout_marginLeft="20dp"
                                 android:layout_toRightOf="@+id/thumbsUpCountView"
-                                android:background="@drawable/thumbs_down_selector" />
+                                android:background="@drawable/thumbs_down_selector"
+                                app:backgroundTint="#00000000"
+                                app:backgroundTintMode="add" />
 
                             <TextView
                                 android:id="@+id/thumbsDownCountView"
