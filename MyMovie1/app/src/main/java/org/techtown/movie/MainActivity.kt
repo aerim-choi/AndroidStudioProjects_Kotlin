@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //토글 만드는방법(개발자가 이렇게 쓰라고 한거임 )
+
         setSupportActionBar(toolbar)
 
         val toggle = ActionBarDrawerToggle(this, drawerLayout,toolbar, R.string.open, R.string.close)
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun onFragmentSelected(index:Int){
         //Fragment1()로 초기화 해줌
-        var fragment: Fragment=Fragment1()
+        var fragment: Fragment =Fragment1()
 
         when(index){
             0 -> {
@@ -57,8 +57,6 @@ class MainActivity : AppCompatActivity() {
         with(supportFragmentManager.beginTransaction()){
             replace(R.id.container,fragment)
         }.commit()
-
-
     }
 
     override fun onBackPressed() {
